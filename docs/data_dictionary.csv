@@ -1,0 +1,20 @@
+source_column,name,description,role
+1,person_id,Record identifier; not a covariate.,identifier
+2,earnings_30mo,Total earnings in dollars over 30 months following random assignment.,outcome
+3,offer,"Random assignment to an offer of JTPA services: 1 offered, 0 not offered.",instrument / assignment
+4,enrolled,"Actual enrollment in JTPA services: 1 enrolled, 0 not enrolled.",treatment
+5,male,"Source sex coding: 1 male, 0 female.",baseline characteristic
+6,hsorged,High-school diploma or GED indicator; fractional entries occur in the extract.,baseline characteristic
+7,black,Source indicator for Black participants.,baseline characteristic
+8,hispanic,Source indicator for Hispanic participants.,baseline characteristic
+9,married,Marital-status indicator; fractional entries occur in the extract.,baseline characteristic
+10,wkless13,Prior-employment variable. Verify the threshold and coding direction in study documentation before interpreting; fractional entries occur.,baseline characteristic; review coding
+11,afdc,AFDC receipt indicator; used in the authors' female-sample covariate specification.,baseline characteristic
+12,age2225,Age 22–25 indicator.,baseline characteristic
+13,age2629,Age 26–29 indicator.,baseline characteristic
+14,age3035,Age 30–35 indicator.,baseline characteristic
+15,age3644,Age 36–44 indicator.,baseline characteristic
+16,age4554,Age 45–54 indicator.,baseline characteristic
+17,class_tr,"Original recommended classroom service strategy, not actual receipt of training (Abadie et al., 2002, p. 101).",intake service recommendation; justify causal role
+18,ojt_jsa,"Original recommended on-the-job training / job-search-assistance strategy, not actual receipt (Abadie et al., 2002, p. 101).",intake service recommendation; justify causal role
+19,f2sms,"Indicator that earnings data come from the second follow-up survey (Abadie et al., 2002, p. 101).",earnings measurement / sample source; review selection before adjustment
