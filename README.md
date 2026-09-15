@@ -1,6 +1,6 @@
 # Job Training and Income
 
-**➡️ [Open the analysis notebook](notebooks/job_training_and_income.ipynb)**
+**[Open the analysis notebook](notebooks/job_training_and_income.ipynb)**
 
 This project tries to uncover the effect of job training on income, using data from
 the National JTPA Study.
