@@ -1,0 +1,3 @@
+,,partial.rsquared,f.stat,f.dist
+Uncontrolled IV,enrolled,0.35501025383946916,11376.464229711732,chi2(1)
+Controlled IV,enrolled,0.3607495131183154,11296.548110656044,chi2(1)
