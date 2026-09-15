@@ -1,11 +1,26 @@
 # Job Training and Income
 
-This project tries to uncover the effect of job training on income, using data from
-the National JTPA Study as analyzed in Abadie, Angrist, and Imbens (2002),
-*Instrumental Variables Estimates of the Effect of Subsidized Training on the
-Quantiles of Trainee Earnings*, Econometrica 70(1), 91–117.
+**➡️ [Open the analysis notebook](notebooks/job_training_and_income.ipynb)**
 
-The analysis is in `notebooks/job_training_and_income.ipynb`.
+This project tries to uncover the effect of job training on income, using data from
+the National JTPA Study.
+
+## Headline result
+
+Enrolling in JTPA services raises 30-month earnings by about **$1,771** (robust SE $498,
+95% CI $795 to $2,746) for compliers, roughly an 11.7% increase over average 30-month
+earnings of about $15,041. Randomized assignment to the program is used as an instrument
+for actual enrollment.
+
+| Model | Estimand | Estimate ($) | Robust SE ($) | 95% CI ($) |
+|---|---|---:|---:|---:|
+| Assignment OLS | Offer effect (ITT) | 1,159 | 330 | 512 to 1,807 |
+| Enrollment OLS | Enrollment association (non-causal) | 2,791 | 320 | 2,164 to 3,418 |
+| Uncontrolled IV | Enrollment effect for compliers | 1,849 | 526 | 817 to 2,881 |
+| Controlled IV | Enrollment effect for compliers | 1,771 | 498 | 795 to 2,746 |
+
+All models use the same 11,204 people. Full details, diagnostics, and limitations are in [the notebook](notebooks/job_training_and_income.ipynb).
+
 
 ## Links
 
