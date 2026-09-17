@@ -10,8 +10,6 @@ the National JTPA Study.
 3. **[IV regression](notebooks/03_iv_regression.ipynb)**: estimates the enrollment effect using randomized assignment as an instrument.
 4. **[Matching](notebooks/04_matching.ipynb)**: repeats the analysis with nearest-neighbor matching on the controls, ignoring the randomized offer, as a comparison against the IV estimate.
 
-Run the notebooks in order; the analysis notebooks load `data/processed/jtpa_preprocessed.csv` and `data/processed/baseline_controls.json`.
-
 ## Headline result
 
 Enrolling in JTPA services raises 30-month earnings by about **$1,771** (robust SE $498,
