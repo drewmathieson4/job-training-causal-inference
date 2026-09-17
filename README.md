@@ -1,9 +1,15 @@
 # Job Training and Income
 
-**[Open the analysis notebook](notebooks/job_training_and_income.ipynb)**
-
 This project tries to uncover the effect of job training on income, using data from
 the National JTPA Study.
+
+## Notebooks
+
+1. **[Data preprocessing](notebooks/01_data_preprocessing.ipynb)**: loads and checks the raw data, recodes imputed values, and saves the processed data used by the analysis notebooks.
+2. **[IV regression](notebooks/02_iv_regression.ipynb)**: estimates the enrollment effect using randomized assignment as an instrument.
+3. **[Matching](notebooks/03_matching.ipynb)**: in progress.
+
+Run the preprocessing notebook first; the analysis notebooks load `data/processed/jtpa_preprocessed.csv`.
 
 ## Headline result
 
@@ -19,7 +25,7 @@ for actual enrollment.
 | Uncontrolled IV | Enrollment effect for compliers | 1,849 | 526 | 817 to 2,881 |
 | Controlled IV | Enrollment effect for compliers | 1,771 | 498 | 795 to 2,746 |
 
-All models use the same 11,204 people. Full details, diagnostics, and limitations are in [the notebook](notebooks/job_training_and_income.ipynb).
+All models use the same 11,204 people. Full details, diagnostics, and limitations are in [the IV regression notebook](notebooks/02_iv_regression.ipynb).
 
 
 ## Links
